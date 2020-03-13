@@ -1,0 +1,2 @@
+rootProject.name='AndroidSession3'
+include ':app'
