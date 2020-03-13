@@ -4,27 +4,23 @@ import java.util.List;
 
 public class MemesList {
     Boolean success;
-    List<MemesClass> memes;
+    DataClass data;
 
-    public MemesList() {
+
+    public Boolean getSuccess() {
+        return success;
     }
 
-    public List<MemesClass> getMemes(){
-        return memes;
+    public void setSuccess(Boolean success) {
+        this.success = success;
     }
-    public String getId(Integer i){
-        return memes.get(i).getId();
+
+    public DataClass getData() {
+        return data;
     }
-    public String getName(Integer i){
-        return memes.get(i).getName();
+
+    public void setData(DataClass data) {
+        this.data = data;
     }
-    public String getURL(Integer i){
-        return memes.get(i).getUrl();
-    }
-    public Integer getHeight(Integer i){
-        return memes.get(i).getHeight();
-    }
-    public Integer getWidth(Integer i){
-        return memes.get(i).getWidth();
-    }
+
 }

@@ -6,6 +6,7 @@ public class MemesClass {
     String url;
     Integer width;
     Integer height;
+    Integer box_count;
 
     public String getId() {
         return id;
@@ -47,11 +48,20 @@ public class MemesClass {
         this.height = height;
     }
 
-    public MemesClass(String id, String name, String url, Integer width, Integer height) {
+    public Integer getBoxCount() {
+        return box_count;
+    }
+
+    public void setBoxCount(Integer boxCount) {
+        this.box_count = boxCount;
+    }
+
+    public MemesClass(String id, String name, String url, Integer width, Integer height, Integer boxCount) {
         this.id = id;
         this.name = name;
         this.url = url;
         this.width = width;
         this.height = height;
+        this.box_count = boxCount;
     }
 }

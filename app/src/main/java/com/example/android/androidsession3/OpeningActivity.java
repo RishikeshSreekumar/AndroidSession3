@@ -27,7 +27,6 @@ public class OpeningActivity extends AppCompatActivity {
             public void onResponse(String response) {
                 Intent intent = new Intent(getApplicationContext(), MemesActivity.class);
                 intent.putExtra("memes", response);
-                finish();
                 startActivity(intent);
             }
         }, new Response.ErrorListener() {
